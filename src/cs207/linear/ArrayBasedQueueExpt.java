@@ -1,5 +1,7 @@
 package cs207.linear;
 
+import java.util.Iterator;
+
 /**
  * A very simple experiment with ArrayBasedQueues.
  *
@@ -20,17 +22,22 @@ public class ArrayBasedQueueExpt {
     expt.peek();
     expt.put("c");
     expt.peek();
-    expt.get();
+    //expt.get();
     expt.peek();
-    expt.get();
+    //expt.get();
     expt.put("x");
     expt.peek();
-    expt.get();
-    expt.get();
+    // expt.get();
+    // expt.get();
 
     // We've put and get the same number of elements, it
     // should be empty
     expt.isEmpty();
+
+    Iterator<String> s = expt.iterator();
+    System.out.println(s.next());
+    System.out.println(s.next());
+    System.out.println(s.next());
 
     /*
     // It's always good to see what happens after you've cleared
